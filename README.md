@@ -52,16 +52,22 @@
 
 ## Restore Backup in ERPNext Version 14:
    Step 1: Download the latest backup file in the ERPNext Web Instance. (Screen Name: Download Backup).
+   
    Step 2: After downloading the latest backup file, now you can restore it into the latest version of ERPNext Version14.
+   
    Step 3: Now you can copy or move the unzip backup file in the windows local to ubuntu server using this cmd, In cmd prompt goto the backuo file downloaded directory then, use this cmd to move the Local 
            file into the Ubuntu Server--> scp name_of_the_backup_file.sql.gz username@ip_address:/home/to/frappe (which directory you want to move).
            For Ex -- scp 20231204_060002-ahp_medicall_in-database.sql.gz frappe@192.168.29.107:/home/frappe/frappe-bench 
            
 ## Below Steps to follow the Restore process:
    Step 1: ls (to list the sites in the frappe-bench directory)
+   
    Step 2: gunzip name_of_the_backup_file.sql.gz
     	      (For ex: gunzip ahp.sql.gz)
+           
    Step 3: ls
+   
    Step 4: bench –site sitename –force restore name_of_the_backup_file.sql
     	      (For ex: bench –site frappe.com –force restore ahp.sql)
+           
    Step 5: sudo reboot...
