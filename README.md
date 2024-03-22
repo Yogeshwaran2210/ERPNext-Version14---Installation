@@ -59,7 +59,7 @@
            file into the Ubuntu Server--> scp name_of_the_backup_file.sql.gz username@ip_address:/home/to/frappe (which directory you want to move).
            For Ex -- scp 20231204_060002-ahp_medicall_in-database.sql.gz frappe@192.168.29.107:/home/frappe/frappe-bench 
            
-## Below Steps to follow the Restore process:
+## Below steps to follow the restore process:
    Step 1: ls (to list the sites in the frappe-bench directory)
    
    Step 2: gunzip name_of_the_backup_file.sql.gz
