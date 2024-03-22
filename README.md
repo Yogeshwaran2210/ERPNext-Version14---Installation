@@ -11,7 +11,9 @@
 
 ## Import and Start ERPNext Instance:
    Step 1: Import the downloaded ERPNext version 14 file in Virtual Box.
+   
    Step 2: After Import, Click Start button in Virtual Box.
+   
    Step 3: After clicking the Start button it will takes some times to run the Instance.
 
 ## SSH Installation (Default password: frappe):
